@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <RadioButton
+            android:id="@+id/radioButtonCountry1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="India" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCountry2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Japan"
+            android:layout_below="@id/radioButtonCountry1"
+            android:layout_marginTop="20dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonCountry3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Isreal"
+            android:layout_below="@id/radioButtonCountry2"
+            android:layout_marginTop="20dp"/>
+
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/imageViewFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+</RelativeLayout>
